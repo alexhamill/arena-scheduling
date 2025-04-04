@@ -389,5 +389,5 @@ def error400(err):
 	return err.body 
 
 init_db()
-run(host="0.0.0.0", port="8080", server='paste')        #dev
-#daemon_run(host="0.0.0.0", port="8080", server='paste')              #prod
+#run(host="0.0.0.0", port="8080", server='paste')        #dev
+daemon_run(host="0.0.0.0", port="8080")#, server='paste')              #prod
